@@ -1,4 +1,4 @@
-# table se values:
+# table values:
 # row 30: Hgm
 # row 19: Ca
 # row 14: Et
