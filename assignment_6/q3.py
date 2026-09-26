@@ -44,7 +44,7 @@ if __name__ == "__main__":
     filename = (
         sys.argv[1]
         if len(sys.argv) > 1
-        else "/home/specapoorv/bioinfo/assignment_6/set1_method1_entropy_unweighted.txt"
+        else "/home/specapoorv/bioinfo/assignment_6/results/set1_method1_entropy_unweighted.txt"
     )
     records = parse_al2co_file(filename)
     print_top_conservation(records, n=10)

@@ -45,8 +45,8 @@ def compare_alignments(f_clustal, f_mafft, f_muscle, threshold=0.1):
         print(f"{item[0]:<6}{item[1]:<6}{item[2]:<10.3f}{item[3]:<10.3f}{item[4]:<10.3f}{item[5]:<10.3f}")
 
 if __name__ == "__main__":
-    f_clustal = sys.argv[1] if len(sys.argv) > 1 else "assignment_6/results/set2_method1_entropy_unweighted.txt"
-    f_mafft   = sys.argv[2] if len(sys.argv) > 2 else "assignment_6/set2_mafft_entropy.txt"
-    f_muscle  = sys.argv[3] if len(sys.argv) > 3 else "assignment_6/set2_muscle_entropy.txt"
+    f_clustal = sys.argv[1] if len(sys.argv) > 1 else "results/set2_method1_entropy_unweighted.txt"
+    f_mafft   = sys.argv[2] if len(sys.argv) > 2 else "set2_mafft_entropy.txt"
+    f_muscle  = sys.argv[3] if len(sys.argv) > 3 else "set2_muscle_entropy.txt"
 
     compare_alignments(f_clustal, f_mafft, f_muscle)

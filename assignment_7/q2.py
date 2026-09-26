@@ -1,0 +1,33 @@
+w = {
+    "A": 85,
+    "C": 115,
+    "D": 130,
+    "E": 145,
+    "F": 160,
+    "G": 70,
+    "H": 150,
+    "I": 125,
+    "K": 145,
+    "L": 125,
+    "M": 143,
+    "N": 130,
+    "P": 110,
+    "Q": 140,
+    "R": 170,
+    "S": 100,
+    "T": 115,
+    "V": 110,
+    "W": 200,
+    "Y": 175,
+}
+
+
+s1 = "RATPTRWPVGCFNRPWTKWSYDEALDGIKAAGYAWTGLLTASKPSLHHATATPEYLAALKQKSRHAA"
+s2 = "AAAVMMGLAAIGAAIGIGILGGKFLEGAARQPDLIPLLRTQFFIVMGLVDAIPMIAVGLGLYVMFAVA"
+s3 = "AADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRLTGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGTRVGDQNLGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI"
+
+for i, s in enumerate([s1, s2, s3], 1):
+    tot = 0
+    for x in s:
+        tot += w[x]
+    print("seq", i, tot)
