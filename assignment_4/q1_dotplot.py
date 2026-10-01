@@ -1,9 +1,3 @@
-"""
-Dot Plot Visualizer for Sequence Alignment
-Human vs Chicken Hemoglobin Beta Chain (HBB)
-Pure Python - uses only the standard library (tkinter)
-"""
-
 import tkinter as tk
 from tkinter import scrolledtext, messagebox
 
@@ -235,8 +229,7 @@ class DotPlotApp:
                                              fill="#1f6f1f", outline="")
 
     def find_segments(self, seq1, seq2, min_seg):
-        """Scan every diagonal for runs of consecutive identical residues
-        (these show up as unbroken diagonal lines on the dot plot)."""
+
         self.output_box.delete("1.0", "end")
         n, m = len(seq1), len(seq2)
         segments = []
